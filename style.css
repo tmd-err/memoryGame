@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 300px;
+
+}
+.container>*{
+    width: 150px;
+    height: 150px;
+}
+img{
+    cursor: pointer;
+}
+.go-down{
+    animation-name: down;
+    animation-duration: 1s;
+}
+@keyframes down {
+    0%{
+        transform: translateY(-300px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
